@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+<h1>Home</h1>
+<p><%= homeStartingContent %></p>
+
+<%for (const key in postCompose) {%>
+	<%if (postCompose.hasOwnProperty(key)) {%>
+		<%homeTitle = postCompose[key].title;%>
+        <%homeContent = postCompose[key].content;%>
+        <h1><%= homeTitle %></h1>
+        <p><%= homeContent.substring(0,100) + "..."%> <a href="/posts/<%= postCompose[key]._id %>">Read More</a></p> 
+	<%}%>
+<%}%>
+<%- include("partials/footer"); -%>
