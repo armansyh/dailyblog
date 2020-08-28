@@ -7,8 +7,8 @@ const mongoose = require("mongoose");
 
 const post = require("./routers/post");
 
-mongoose.connect("mongodb://localhost:27017/blogDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
-// mongoose.connect("mongodb+srv://admin-arman:997381@clusterfree.r8dwl.gcp.mongodb.net/blogDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+// mongoose.connect("mongodb://localhost:27017/blogDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
+mongoose.connect("mongodb+srv://admin-arman:997381@clusterfree.r8dwl.gcp.mongodb.net/blogDB", { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 app.set("view engine", "ejs");
 
