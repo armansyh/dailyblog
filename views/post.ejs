@@ -21,9 +21,9 @@
                         <div class="form-group">
                             <input type="hidden" name="id" value=<%= element._id %>>
                             <label>Title</label>
-                            <input type="text" class="form-control" name="postTitle" required />
+                            <input type="text" class="form-control" name="postTitle" value="<%= element.title %>" required />
                             <label>Post</label>
-                            <textarea class="form-control" name="postBody" rows="5" required ></textarea>
+                            <textarea class="form-control" name="postBody" rows="5" required ><%= element.content %></textarea>
                         </div>
                 </div>
                 <div class="modal-footer">
